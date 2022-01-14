@@ -85,6 +85,7 @@ align-items: center;
 }
 
 .btn{
+    display: inline-block;
     padding: 8px 20px;
     margin: 8px 3px;
     border: 2px solid white;
@@ -118,4 +119,42 @@ align-items: center;
 
 .text-small{
     font-size: 18px;
+    padding: 5px;
+}
+.subhead{
+    display: block;
+}
+
+.section{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+
+.secleft{
+    flex-direction: row-reverse;
+}
+.sectiontag{
+    padding: 2px;
+}
+
+.contact{
+    background-color: rgb(240, 240, 240);
+    height: 34vh;
+}
+.text-center{
+    text-align: center;
+}
+.form{
+    max-width: 344px;
+    margin: auto;
+}
+.form input{
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
 }
