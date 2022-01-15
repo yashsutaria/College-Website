@@ -79,13 +79,12 @@ align-items: center;
 .firsthalf{
     font-size: large;
     width: 80%;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     justify-content: center;
 }
 
 .btn{
-    display: inline-block;
     padding: 8px 20px;
     margin: 8px 3px;
     border: 2px solid white;
@@ -93,6 +92,7 @@ align-items: center;
     background: none;
     color: white;
     cursor: pointer;
+    text-align: center;
 }
 
 .btn-sm{
@@ -100,6 +100,10 @@ align-items: center;
     vertical-align: middle;
 }
 
+.btn-dark{
+    color: black;
+    border: 3px solid black;
+}
 .secondhalf {
     width: 30%;
 }
@@ -138,23 +142,38 @@ align-items: center;
     flex-direction: row-reverse;
 }
 .sectiontag{
+    text-align: right;
     padding: 2px;
 }
 
 .contact{
     background-color: rgb(240, 240, 240);
-    height: 34vh;
+    height: 650px;
 }
 .text-center{
     text-align: center;
+    padding: 10px;
 }
 .form{
-    max-width: 344px;
-    margin: auto;
+    max-width: 500px;
+    margin: 25px auto;
 }
-.form input{
+.form-input{
+    margin: 15px 0;
+    padding: 5px 3px;
     width: 100%;
     font-size: 19px;
     border: 2px solid grey;
     border-radius: 6px;
+}
+.align1{
+    text-align: left;
+}
+
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    color: white;
 }
