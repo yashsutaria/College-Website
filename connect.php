@@ -14,7 +14,7 @@ die('Connection Failed : ' .$conn->error);
 }
 else
 {
-    $stmt = $conn=>prepare("insert into contactus(name, phone, email, text)
+    $stmt = $conn->prepare("insert into contactus(name, phone, email, text)
     values( ?, ?, ?, ?)");
     $stmt->bind_param("siss", $name, $phone, $email, $text);
     $stmt->execute();
